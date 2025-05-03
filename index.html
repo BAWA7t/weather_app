@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <form id="weatherForm">
+      <input type="text" id="locationInput" placeholder="Enter a city" required>
+      <button type="submit">Search</button>
+    </form>
+    
+    <div id="weatherDisplay" class="hidden">
+      <h2 id="locationName"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <button id="toggleUnit">Switch to °F</button>
+      <img id="weatherGif" alt="weather gif">
+    </div>
+
+    <div id="loading" class="hidden">Loading...</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
